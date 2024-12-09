@@ -1,0 +1,19 @@
+
+
+.subtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    width: 900px;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (width:1000px) {
+    
+}

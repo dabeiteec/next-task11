@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--geistSans), sans-serif; 
+    margin: 20px;
+
+}
+.logo {
+    font-family: var(--geistMono), monospace; 
+}
