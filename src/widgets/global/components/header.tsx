@@ -1,6 +1,6 @@
 import React from "react";
 import { FaWhatsappSquare, FaPhoneSquareAlt } from "react-icons/fa";
-import styles from './header.module.css';
+import styles from '../styles/header.module.css';
 import Link from "next/link";
 
 const Header: React.FC = () => {

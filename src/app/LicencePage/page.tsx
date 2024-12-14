@@ -1,12 +1,12 @@
 import React from "react";
-import  Header  from '../../widgets/global/header'
+import  Header  from '../../widgets/global/components/header'
 
 const  LicencePage:React.FC  =()=> {
     return (
-      <div>
-       <Header/>
+        <div>
+            <Header/>
 
-      </div>
+        </div>
     );
-  }
+}
 export default LicencePage;
