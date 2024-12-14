@@ -8,10 +8,10 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <h1 className={styles.logo}>Logo</h1>
       <div className={styles.navButton}>
-        <Link href=''>Home</Link>
-        <Link href=''>About</Link>
-        <Link href=''>Licence</Link>
-        <Link href=''>Services</Link>
+        <Link href='/'>Home</Link>
+        <Link href='/AboutPage'>About</Link>
+        <Link href='/LicencePage'>Licence</Link>
+        <Link href='/ServicesPage'>Services</Link>
         <div className={styles.callContainer}>
           <a>Заказать обработанный звонок</a>
           <div className={styles.contacts}>

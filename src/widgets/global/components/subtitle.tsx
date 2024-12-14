@@ -19,7 +19,6 @@ const  Subtitle:React.FC  =()=> {
       <div  className={`${style.marginTop} ${style.marginBottom}`}>
         <MainButton label="Отправить"/>
       </div>
-     
     </section>
   );
 }
