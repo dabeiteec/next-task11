@@ -1,9 +1,9 @@
 import React from "react";
-import  Header  from '../widgets/global/header'
-import  Subtitle  from '../widgets/homepage/components/subtitle'
+import  Header  from '../../widgets/global/header'
+import  Subtitle  from '../../widgets/homepage/components/subtitle'
 import SubtitleArticle from "src/widgets/homepage/components/subtitle-article";
 import AboutEngineers from "src/widgets/homepage/components/about";
-import TechicalSupervision from "src/widgets/homepage/components/technical-supervision";
+import HomeFooter from "src/widgets/homepage/components/prezentation";
 
 const  HomePage:React.FC  =()=> {
     return (
@@ -12,7 +12,7 @@ const  HomePage:React.FC  =()=> {
        <Subtitle/>
        <SubtitleArticle/>
        <AboutEngineers/>
-       <TechicalSupervision/>
+       <HomeFooter/>
       </div>
     );
   }

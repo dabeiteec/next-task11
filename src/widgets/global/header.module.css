@@ -1,12 +1,89 @@
-.header{
+.header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-family: var(--geistSans), sans-serif; 
-    margin: 20px;
-
+    padding: 10px 20px 10px 20px;
 }
 .logo {
+    font-size: 64px;
     font-family: var(--geistMono), monospace; 
+}
+.navButton {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    height: 22px;
+
+}
+.navButton > a {
+    border-bottom: 2px white solid;
+    padding: 0px;
+    line-height: 1;
+}
+.callContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60px;
+    gap: 30px;
+    cursor: pointer; 
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    transform: translateY(20px); 
+    pointer-events: none; 
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.contactServices{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.callContainer:hover .contacts {
+    opacity: 1;
+    transform: translateY(0); 
+    pointer-events: auto; 
+}
+
+.contacts > * {
+    opacity: 0;
+    animation: fadeSlideIn 0.6s ease forwards;
+}
+.whatsappIcon {
+    font-size: 40px;
+    color: #25d366;
+    transition: transform 0.3s ease;
+}
+
+.whatsappIcon:hover {
+    transform: scale(1.2);
+}  
+.phoneIcon {
+    font-size: 40px;
+    color: #007aff;
+    border: 2px solid #007aff;
+    border-radius: 50%;
+    padding: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.phoneIcon:hover {
+    transform: scale(1.2);
+    background-color: rgba(0, 122, 255, 0.1);
+}
+
+@keyframes fadeSlideIn {
+    0% {
+    opacity: 0;
+    transform: translateY(10px);
+    }
+    100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
 }
