@@ -1,0 +1,14 @@
+.marginAuto{
+    margin: auto;
+}
+.marginTop{
+    margin-top: 100px;
+}
+.marginBot{
+    margin-bottom: 100px;
+}
+.marginVertical{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+

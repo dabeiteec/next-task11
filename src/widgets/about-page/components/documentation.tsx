@@ -1,6 +1,8 @@
 import React from "react";
-// import styles from '../styles/documentation.module.css';
-import styles from '../styles/main.module.css';
+import styles from '../styles/documentation.module.css';
+import grid from '../../../shareds/styles/grid.module.css'
+import flex from '../../../shareds/styles/flex.module.css'
+import margin from '../../../shareds/styles/margin.module.css'
 
 
 const Documentation: React.FC = () => {
@@ -11,11 +13,11 @@ const Documentation: React.FC = () => {
         'Спец работы (Электрика, Сантехника)'
     ];
     return (
-        <footer className={`${styles.container} ${styles.margin}`}>
-            <h2>Работая с нами вы экономите</h2>
-            <ol className={styles.list}>
-                {arr.map((item,index)=>(<li key={index} className={styles.arrItem}>{item}</li>))}
-            </ol>
+        <footer className={`${styles.container} ${flex.flexColumn} ${margin.marginVertical}`}>
+            <h2>Приводим в порядок документацию по всем видам работ:</h2>
+            <ul className={`${styles.list} ${grid.gridTwoColumn}`}>
+                {arr.map((item,index)=>(<li key={index}>{item}</li>))}
+            </ul>
         </footer>
     );
 };

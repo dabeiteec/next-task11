@@ -1,0 +1,10 @@
+.list{
+    list-style-type: none;
+    width: 70%;
+    gap: 30px;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    gap:60px
+}

@@ -16,7 +16,7 @@ const MainButton:React.FC<ButtonProp>= ({label})=>{
 }
 export const SubtitleButton:React.FC<ButtonProp>= ({label})=>{
     return(
-        <button className={styles.subtitleButton}>
+        <button className={`${styles.button} ${styles.subtitleButton}`}>
             {label}
         </button>
     )
