@@ -5,6 +5,9 @@
     font-family: var(--geistSans), sans-serif; 
     padding: 10px 20px 10px 20px;
 }
+.active{
+    color:red;
+}
 .logo {
     font-size: 64px;
     font-family: var(--geistMono), monospace; 

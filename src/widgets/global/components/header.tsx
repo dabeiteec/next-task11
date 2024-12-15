@@ -4,11 +4,14 @@ import styles from '../styles/header.module.css';
 import Link from "next/link";
 
 const Header: React.FC = () => {
+
   return (
     <header className={styles.header}>
       <h1 className={styles.logo}>Logo</h1>
       <div className={styles.navButton}>
-        <Link href='/'>Home</Link>
+        <Link href='/'>
+          Home
+        </Link>
         <Link href='/AboutPage'>About</Link>
         <Link href='/LicencePage'>Licence</Link>
         <Link href='/ServicesPage'>Services</Link>
