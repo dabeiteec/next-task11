@@ -1,32 +1,22 @@
 .servicesContainer{
-    display: flex;
-    flex-direction: column;
     gap: 50px;
     margin-top: 50px;
     width: 100%;
-    align-items: center;
-    padding: 0px 50px 50px 50px;
+    padding: 0px 100px 50px 100px;
 }
 .title{
     font-size: 55px;
     font-weight: 200;
 }
 .services{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 40px; 
-    width: 100%;
-
+    width: 60%;
     list-style-type: none; 
 }
 .servicesItem{
-    
-    
-    font-size: 32px;
-    font-weight: 200;
+    font-size: 22px;
 }
 .servicesItem:nth-child(even) {
-    justify-self: end; 
+    justify-self:end; 
 }
 
 

@@ -1,5 +1,8 @@
 import React from "react";
 import styles from './services.module.css';
+import flex from '../../shareds/styles/flex.module.css';
+import grid from '../../shareds/styles/grid.module.css';
+
 
 const OurServices: React.FC = () => {
     const services = [
@@ -9,13 +12,13 @@ const OurServices: React.FC = () => {
         'Финансовотехнический аудит','Услуги ПТО','Проектирование',
     ];
     return (
-    <footer className={styles.servicesContainer}>
+    <footer className={`${styles.servicesContainer} ${flex.flexColumn}`}>
         <h2 className={styles.title}>Наши услуги</h2>
-        <div className={styles.services}>
+        <ul className={`${styles.services} ${grid.gridTwoColumn}`}>
             {services.map((item,index)=>(
                 <li key={index} className={styles.servicesItem}>{item}</li>
             ))}
-        </div>
+        </ul>
     </footer>
 );
 };
