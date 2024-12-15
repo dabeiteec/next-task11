@@ -9,7 +9,14 @@ interface ButtonProp{
 
 const MainButton:React.FC<ButtonProp>= ({label})=>{
     return(
-        <button className={styles.mainButton}>
+        <button className={`${styles.button} ${styles.mainButton}`}>
+            {label}
+        </button>
+    )
+}
+export const SubtitleButton:React.FC<ButtonProp>= ({label})=>{
+    return(
+        <button className={styles.subtitleButton}>
             {label}
         </button>
     )
