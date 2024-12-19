@@ -1,10 +1,10 @@
 import React from "react";
-import HomePage from "src/app/HomePage/page";
+import MainPage from "src/Page/MainPage";
 
 export const  Home:React.FC  =()=> {
   return (
     <div>
-      <HomePage/>
+      <MainPage/>
     </div>
   );
 }
