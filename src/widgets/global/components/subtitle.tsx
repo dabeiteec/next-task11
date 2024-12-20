@@ -1,8 +1,18 @@
-import React from "react";
+import React,{ SetStateAction } from "react";
 import style from '../styles/subtitle.module.css'
 import {SubtitleButton} from "src/shareds/button/button";
 
-const  Subtitle:React.FC  =()=> {
+interface ModalPropse{
+  active:boolean;
+  setActive: React.Dispatch<SetStateAction<boolean>>;
+}
+
+const  Subtitle:React.FC<ModalPropse> = ({active,setActive})=>{
+
+  const handleOpenModal = ()=>{
+    console.log (active)
+    setActive(true)
+}
   return (
     <div className={style.container}>
       <div className={style.imgContainer}>
@@ -19,7 +29,7 @@ const  Subtitle:React.FC  =()=> {
             </h2>
           </div>
           <div  className={`${style.marginTop} ${style.marginBottom}`}>
-            <SubtitleButton label="Отправить"/>
+            <SubtitleButton label="Отправить" currentClick={handleOpenModal}/>
           </div>
         </section>
       </div>

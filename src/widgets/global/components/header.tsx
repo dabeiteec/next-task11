@@ -1,7 +1,6 @@
 import React from "react";
 import { FaWhatsappSquare, FaPhoneSquareAlt } from "react-icons/fa";
 import styles from '../styles/header.module.css';
-import Link from "next/link";
 
 const Header: React.FC = () => {
 
@@ -9,12 +8,6 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <h1 className={styles.logo}>Logo</h1>
       <div className={styles.navButton}>
-        <Link href='/'>
-          Home
-        </Link>
-        <Link href='/AboutPage'>About</Link>
-        <Link href='/LicencePage'>Licence</Link>
-        <Link href='/ServicesPage'>Services</Link>
         <div className={styles.callContainer}>
           <a>Заказать обработанный звонок</a>
           <div className={styles.contacts}>

@@ -1,0 +1,45 @@
+
+.modalBackdrop {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+    left: 50%; 
+    transform: translate(-50%, 100%);
+    top:0;
+    border: 2px black solid;
+    border-radius: 20px;
+    width: 70vw;
+    height: 30vh;
+    padding: 30px;
+    gap:30px;
+}
+.modalBackdrop.active {
+    opacity: 1;
+    visibility: visible;
+}
+.title{
+    width: 50%;
+    text-align: center;
+}
+.buttonContainer{
+    justify-content: space-evenly;
+    width: 100%;
+}
+.formContainer{
+    gap:30px;
+    width: 100%;
+}
+.closeIcon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    cursor: pointer; 
+}

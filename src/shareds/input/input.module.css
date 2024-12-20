@@ -1,0 +1,9 @@
+.styledInput{
+    background-color: transparent;
+    border: 1px black solid;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(0, 0, 0, 0.6 );
+    font-size: 20px;
+    min-width: 200px;
+}
