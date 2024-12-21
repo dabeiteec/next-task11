@@ -15,14 +15,14 @@ const  MainPage:React.FC  =()=> {
     <div>
         <Header/>
         <ContactForm/>
-        <AboutMain/>
-        <ITSystem/>
-        <Documentation/>
+        <SubtitleArticle/>
+        <AboutEngineers/>
+        <HomeFooter/>
         <div>
             <ContactForm/>
-            <SubtitleArticle/>
-            <AboutEngineers/>
-            <HomeFooter/>
+            <AboutMain/>
+            <ITSystem/>
+            <Documentation/>
         </div>
         <div>
             <ContactForm/>

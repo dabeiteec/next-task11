@@ -1,5 +1,5 @@
 'use client'
-import React,{ChangeEvent } from 'react';
+import React,{ChangeEvent, useState } from 'react';
 import styles from './input.module.css'
 
 interface StyledInput{
@@ -9,10 +9,18 @@ interface StyledInput{
 }
 
 const StyledInput:React.FC<StyledInput>= ({placeholder,onChange,type})=>{
+    const [inputValue,setInputValue] = useState('');
+
+    const handleInputValue = (e: ChangeEvent<HTMLInputElement>) => {
+        const newValue = e.target.value;
+        setInputValue(newValue);
+        // console.log(inputValue)
+    } 
+
     return (<input className={styles.styledInput} 
     placeholder={placeholder} 
-    onChange={onChange}
-    type={type}
+    onChange={handleInputValue}
+    type={type} value={inputValue}
     />
     )
 }
