@@ -20,8 +20,6 @@ import Lock from '../assets/projects/Lock.jpg';
 import Most from '../assets/projects/Most.jpg';
 import TeleCenter from '../assets/projects/TeleCenter.jpg';
 
-
-
 interface Project {
     name: string; 
     image: StaticImageData; 

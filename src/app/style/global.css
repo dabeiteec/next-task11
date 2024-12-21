@@ -1,7 +1,7 @@
 :root {
     --font-family: 'Mulish', sans-serif;
     --background: #EBDCB9;
-    --foreground: #677047;
+    --foreground:black;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -9,6 +9,7 @@
       --font-family: 'Mulish', sans-serif;
       --background: #677047;
       --foreground: #EBDCB9;
+
     }
   }
   
