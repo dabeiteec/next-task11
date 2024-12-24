@@ -27,7 +27,7 @@ const ModalWindow:React.FC<ModalPropse> = ({active,setActive})=>{
                 <StyledInput type='number'/>
                 <div className={`${styles.buttonContainer} ${flex.flexRow}`}>
                     <MainButton label='Получить скидку 30%'/>
-                    <LinkButton label='Написать в WhatsApp' currentClick={handleWhatsAppRedirect}/>
+                    <MainButton label='Написать в WhatsApp' currentClick={handleWhatsAppRedirect}/>
                 </div>
             </form>
         </section>

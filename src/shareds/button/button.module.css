@@ -15,3 +15,11 @@
     background-color: #FFF7ED;
     border: 2px black solid;
 }
+.transparentButton{
+    border: transparent;
+    background-color: transparent;
+    color:#EBDCB9;
+    font-size:20px;
+    font-family: 'Mulish' sans-serif;
+    font-weight: 200;
+}

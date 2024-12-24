@@ -3,7 +3,6 @@ import styles from './button.module.css'
 
 interface ButtonProp{
     label:string,
-    path?:string,
     currentClick?:()=> void,
 }
 
@@ -21,11 +20,11 @@ export const SubtitleButton:React.FC<ButtonProp>= ({label,currentClick})=>{
         </button>
     )
 }
-export const LinkButton:React.FC<ButtonProp>= ({label,currentClick})=>{
+export const TransparentButton:React.FC<ButtonProp>= ({label,currentClick})=>{
     return(
-        <button onClick={currentClick} className={`${styles.button} ${styles.mainButton}`}>
+        <button onClick={currentClick} className={styles.transparentButton }>
                 {label}
-            </button>
+        </button>
     )
 }
 export default MainButton;

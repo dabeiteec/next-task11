@@ -1,38 +1,24 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    gap: 45vw;
     align-items: center;
     font-family: var(--geistSans), sans-serif; 
     padding: 10px 20px 10px 20px;
+    justify-items: start;
 }
-.active{
-    color:red;
-}
-.logo {
+.header h1 {
     font-size: 64px;
     font-family: var(--geistMono), monospace; 
-}
-.navButton {
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
-    height: 22px;
-
-}
-.navButton > a {
-    border-bottom: 2px white solid;
-    padding: 0px;
-    line-height: 1;
 }
 .callContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 60px;
-    gap: 30px;
+    gap: 20px;
     cursor: pointer; 
 }
-.contacts {
+.inactive {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,7 +34,7 @@
     justify-content: space-around;
     width: 100%;
 }
-.callContainer:hover .contacts {
+.active {
     opacity: 1;
     transform: translateY(0); 
     pointer-events: auto; 
