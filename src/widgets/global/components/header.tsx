@@ -4,11 +4,13 @@ import { FaWhatsappSquare, FaPhoneSquareAlt } from "react-icons/fa";
 import { TransparentButton } from "src/shareds/button/button";
 import styles from '../styles/header.module.css';
 import flex from '../../../shareds/styles/flex.module.css';
+import handleWhatsAppRedirect from "src/feature/whats-app";
+
 
 const Header: React.FC = () => {
   const [isActivePopUp, setIsActivePopUp] = useState(false);
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 450);
-
+  const [isActivePhone, setIsActivePhone] = useState(false)
   useEffect(() => {
     const handleResize = () => {
       setIsMobileView(window.innerWidth <= 450);
@@ -19,8 +21,10 @@ const Header: React.FC = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-  const handlePopUp = () => {
+  const handlePhone =()=>{
+    setIsActivePhone((prev)=>!prev)
+  }
+    const handlePopUp = () => {
     setIsActivePopUp((prev) => !prev);
   };
 
@@ -33,12 +37,12 @@ const Header: React.FC = () => {
         ) : (
           <TransparentButton currentClick={handlePopUp} label="Заказать обработанный звонок" />
         )}
-        <div className={isActivePopUp ? styles.active : styles.inactive}>
-          <div className={styles.contactServices}>
-            <FaWhatsappSquare className={styles.whatsappIcon} />
-            <FaPhoneSquareAlt className={styles.phoneIcon} />
+        <div className={isActivePopUp ? styles.active : `${styles.inactive} ${flex.flexColumn}`}>
+          <div className={`${styles.contactServices} ${flex.flexRow}`}>
+            <FaWhatsappSquare className={styles.whatsappIcon} onClick={handleWhatsAppRedirect}/>
+            <FaPhoneSquareAlt className={styles.phoneIcon} onClick={handlePhone}/>
           </div>
-          <span>+7(919) 876-54-32</span>
+          {isActivePhone?<span>+7(919) 876-54-32</span>:<div/>}
         </div>
       </nav>
     </header>

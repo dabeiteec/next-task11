@@ -13,17 +13,11 @@ const MainButton:React.FC<ButtonProp>= ({label,currentClick})=>{
         </button>
     )
 }
-export const SubtitleButton:React.FC<ButtonProp>= ({label,currentClick})=>{
-    return(
-        <button onClick={currentClick} className={`${styles.button} ${styles.subtitleButton}`}>
-            {label}
-        </button>
-    )
-}
+
 export const TransparentButton:React.FC<ButtonProp>= ({label,currentClick})=>{
     return(
         <button onClick={currentClick} className={styles.transparentButton }>
-                {label}
+            {label}
         </button>
     )
 }

@@ -11,27 +11,18 @@
         --foregroundButton: #F9F9F9;
     }
 }
-
 .button {
-    border-radius: 20px;
-    padding: 10px 30px;
-    font-size: 38px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 32px;
     font-weight: 300;
     font-family: var(--font-family);
 }
-
 .mainButton {
     color: var(--foregroundButton);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--backgroundButton);
     border: 2px solid var(--foregroundButton);
 }
-
-.subtitleButton {
-    color:  var(--foregroundButton);
-    background-color: var(--backgroundButton);
-    border: 2px solid black; 
-}
-
 .transparentButton {
     border: transparent;
     background-color: transparent;
@@ -40,3 +31,16 @@
     font-family: var(--font-family);
     font-weight: 200;
 } 
+@media (max-width:720px) {
+    .button {
+        font-size: 26px;
+    }
+}
+@media (max-width:530px) {
+    .transparentButton {
+        font-size: 18px;
+    } 
+    .button {
+        font-size: 20px;
+    }
+}

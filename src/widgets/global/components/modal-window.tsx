@@ -1,7 +1,7 @@
 'use client'
 import React,{ SetStateAction } from 'react';
 import { IoClose } from "react-icons/io5";
-import MainButton, { LinkButton } from 'src/shareds/button/button';
+import MainButton from 'src/shareds/button/button';
 import StyledInput from 'src/shareds/input/input';
 import styles from '../styles/modal-window.module.css'
 import flex from '../../../shareds/styles/flex.module.css'

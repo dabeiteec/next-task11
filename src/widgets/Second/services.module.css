@@ -17,6 +17,7 @@
 }
 .servicesItem:nth-child(even) {
     justify-self:end; 
+    text-align: end;
 }
 
 

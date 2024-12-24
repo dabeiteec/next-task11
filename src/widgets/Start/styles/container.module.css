@@ -8,13 +8,8 @@
     justify-items: center;
     gap: 20px;
 }
-.article{
-    font-size: 22px;
-    gap:30px;
-    margin: auto;
-    width:40%;
-}
 .imgContainer{
+    display: flex;
     width: 50%;
 }
 .img{
@@ -22,6 +17,7 @@
     object-fit: cover;
     border-radius:20px;
     border: 2px black solid ;
+    margin: auto;
 }
 
 @media ((max-width: 720px)) {
