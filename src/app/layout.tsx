@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import './style/global.css';
 import { Mulish } from 'next/font/google';
 
-// Подключение шрифта Mulish
 const mulish = Mulish({
-  subsets: ['latin'], // Укажите языковую поднаборку
-  weight: ['200', '300'], // Укажите толщины шрифта, которые нужны
+  subsets: ['latin'], 
+  weight: ['200', '300'], 
   display: 'swap', // Настройка загрузки (рекомендуется 'swap')
 });
 

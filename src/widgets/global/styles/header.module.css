@@ -1,23 +1,75 @@
 .header {
-    display: flex;
-    gap: 45vw;
-    align-items: center;
     font-family: var(--geistSans), sans-serif; 
     padding: 10px 20px 10px 20px;
-    justify-items: start;
+    align-items: end;
+    justify-content: space-between;
 }
 .header h1 {
+    white-space: nowrap; 
     font-size: 64px;
     font-family: var(--geistMono), monospace; 
 }
 .callContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 60px;
+    align-items: center;  
+    height: 60px;  
     gap: 20px;
     cursor: pointer; 
 }
+
+@media (max-width:1280px) {
+    .callContainer {
+        height: 2.5rem; 
+    }
+    .header h1 {
+        font-size: 48px;
+    }
+}
+@media (max-width:900px) {
+    
+    .header h1 {
+        font-size: 38px;
+    }
+}
+@media (max-width:720px) {
+    .callContainer {
+        height: 2.2rem; 
+    }
+    .header h1 {
+        font-size: 32px;
+    }
+}
+@media (max-width:650px) {
+    .header{
+        gap: 20px;
+    }
+    .callContainer {
+        height: 2.2rem; 
+    } 
+    .header h1 {
+        font-size: 30px;
+    }
+}
+@media (max-width:560px) {
+    .header h1 {
+        white-space:inherit; 
+    }
+    .callContainer {
+        height: 3.5rem; 
+    } 
+}
+@media (max-width:450px) {
+    .header h1 {
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .callContainer{
+        display: none;
+    }
+}
+
 .inactive {
     display: flex;
     flex-direction: column;

@@ -1,9 +1,19 @@
+:root{
+    --backgroundColor: #F9f9f9;
+    --foregroundColor: #0D152D;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --backgroundColor: #0D152D;;
+        --foregroundColor: #F9F9F9;
+    }
+}
+
 .styledInput{
-    background-color: transparent;
-    border: 1px black solid;
+    background-color: var(--backgroundColor);
+    border: 1px var(--foregroundColor) solid;
     border-radius: 20px;
     padding: 5px 10px 5px 10px;
-    background-color: rgba(0, 0, 0, 0.6 );
     font-size: 20px;
     min-width: 200px;
 }

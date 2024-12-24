@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "src/*": ["./src/*"]
+      "src/*": ["./src/*"],
+      // "@shareds/*": ["shareds/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

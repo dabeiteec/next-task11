@@ -1,25 +1,42 @@
 
-.button{
+:root {
+    --font-family: 'Mulish', sans-serif;
+    --backgroundButton: #F9F9F9;
+    --foregroundButton: #0D152D;;
+} 
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --backgroundButton: #0D152D;;
+        --foregroundButton: #F9F9F9;
+    }
+}
+
+.button {
     border-radius: 20px;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 30px;
     font-size: 38px;
     font-weight: 300;
+    font-family: var(--font-family);
 }
-.mainButton{
-    color:#EBDCB9;
+
+.mainButton {
+    color: var(--foregroundButton);
     background-color: rgba(255, 255, 255, 0.1);
-    border: 2px #EBDCB9 solid;
+    border: 2px solid var(--foregroundButton);
 }
-.subtitleButton{
-    color:#532A09;
-    background-color: #FFF7ED;
-    border: 2px black solid;
+
+.subtitleButton {
+    color:  var(--foregroundButton);
+    background-color: var(--backgroundButton);
+    border: 2px solid black; 
 }
-.transparentButton{
+
+.transparentButton {
     border: transparent;
     background-color: transparent;
-    color:#EBDCB9;
-    font-size:20px;
-    font-family: 'Mulish' sans-serif;
+    color: var(--foregroundButton);
+    font-size: 20px;
+    font-family: var(--font-family);
     font-weight: 200;
-}
+} 

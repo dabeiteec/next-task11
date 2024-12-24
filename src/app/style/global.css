@@ -1,15 +1,14 @@
 :root {
     --font-family: 'Mulish', sans-serif;
-    --background: #EBDCB9;
-    --foreground:black;
+    --background: #F9F9F9;
+    --foreground: #0D152D;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
       --font-family: 'Mulish', sans-serif;
-      --background: #677047;
-      --foreground: #EBDCB9;
-
+      --background: #060A16;
+      --foreground: #F9F9F9;
     }
   }
   

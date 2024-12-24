@@ -1,19 +1,15 @@
 'use client'
 import React from "react";
-import style from '../../global/styles/subtitle.module.css'
 import LinkButton from "src/shareds/button/button";
 import openVideo from "src/feature/youtube";
+import style from '../styles/article.module.css'
+import flex from '../../../shareds/styles/flex.module.css'
 
 const  SubtitleArticle:React.FC  =()=> {
-  const youtubeLink = 'https://youtu.be/zsK36BYAxr0';
-
   return (
-    <section className={style.subtitle}>
-      {/* TODO убрать класс сабтайтл */}
+    <section className={`${style.article} ${flex.flexColumn}`}>
       <span >9 Лет на рынке, 121 инженер в штате, 255 объектов</span>
-      <LinkButton label="Посмотрите видео о нас"
-        path={youtubeLink}
-        currentClick={openVideo}/>
+      <LinkButton label="Посмотрите видео о нас" currentClick={openVideo}/>
     </section>
   );
 }

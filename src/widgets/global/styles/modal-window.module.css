@@ -1,7 +1,20 @@
+:root {
+    --backgroundModal: #F9F9F9;
+    --foregroundButton: #0D152D;
+    --backgroundModalOpaque: rgba(249, 249, 249, 0.9); 
+    --foregroundButtonOpaque: rgba(13, 21, 45, 0.7); 
+} 
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --backgroundButton: #0D152D;;
+        --foregroundButton: #F9F9F9;
+    }
+}
 
 .modalBackdrop {
+    background-color: var(--foregroundButtonOpaque);
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;

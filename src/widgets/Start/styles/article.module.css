@@ -1,0 +1,15 @@
+.article{
+    margin-top: 40px;
+    font-size: 18px;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 20px;
+    width: 62%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media ((max-width: 720px)) {
+    .article{
+        text-align: center;
+    }
+}
