@@ -6,13 +6,13 @@ import ModalWindow from "src/widgets/global/components/modal-window";
 const  ContactForm:React.FC  =()=> {
     const [active,setActive] = useState(false)
 
-    const handleActiveModal= ()=>{
-        setActive(false)
-    }
+    // const handleActiveModal= ()=>{
+    //     setActive(false)
+    // }
 
     return (
     <div>
-        <Subtitle active={active} setActive={setActive}/>
+        <Subtitle  setActive={setActive}/>
         <ModalWindow active={active} setActive={setActive}/>
     </div>
     );

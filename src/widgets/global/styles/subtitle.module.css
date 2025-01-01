@@ -1,12 +1,4 @@
-:root{
-    --img: url("../../../assets/background.svg");
-    --shadow:3px 3px 0px rgba(0, 0, 0, 0.3); 
-}
-@media (prefers-color-scheme: dark) {
-    :root {
-        --img: url("../../../assets/aa.png");
-    }
-}
+/* TODO */
 .imgContainer{
     position: relative;
     overflow: hidden;

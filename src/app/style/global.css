@@ -2,6 +2,14 @@
     --font-family: 'Mulish', sans-serif;
     --background: #F9F9F9;
     --foreground: #0D152D;
+    --img: url("../../assets/background.svg");
+    --shadow:3px 3px 0px rgba(0, 0, 0, 0.3); 
+    --backgroundModal: #F9F9F9;
+    --foregroundButton: #0D152D;
+    --backgroundModalOpaque: rgba(249, 249, 249, 0.9); 
+      /* --font-family: 'Mulish', sans-serif; */
+    --backgroundButton: #F9F9F9;
+    --foregroundButton: #0D152D;;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -9,6 +17,11 @@
       --font-family: 'Mulish', sans-serif;
       --background: #060A16;
       --foreground: #F9F9F9;
+      --backgroundButton: #0D152D;;
+      --foregroundButton: #F9F9F9;
+      --img: url("../../assets/aa.png");
+      --backgroundButton: #0D152D;;
+      --foregroundButton: #F9F9F9;
     }
   }
   

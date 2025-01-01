@@ -1,5 +1,5 @@
 
-:root {
+/* :root {
     --font-family: 'Mulish', sans-serif;
     --backgroundButton: #F9F9F9;
     --foregroundButton: #0D152D;;
@@ -10,7 +10,7 @@
         --backgroundButton: #0D152D;;
         --foregroundButton: #F9F9F9;
     }
-}
+} */
 .button {
     border-radius: 8px;
     padding: 5px 10px;

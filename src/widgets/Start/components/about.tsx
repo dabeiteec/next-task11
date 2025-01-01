@@ -6,8 +6,7 @@ import flex from '../../../shareds/styles/flex.module.css'
 import container from '../styles/container.module.css'
 
 const  AboutEngineers:React.FC  =()=> {
-    const tehNadzor=[''];
-    const goodEngineers=[''];
+    
     return (
         <article className={`${flex.flexColumn} ${style.aboutContainer}`}>
             <div className={`${flex.flexRow} ${container.container}`}>
@@ -26,7 +25,7 @@ const  AboutEngineers:React.FC  =()=> {
                     <h2 style={{marginTop:'20px'}}className={style.title}>Наши иженеры проходят полиграф</h2>
                 </div>
             </div>
-            <div className={`${flex.flexRow} ${container.container}`}>
+            <div className={`${flex.flexRow} ${container.container}`} style={{paddingLeft:'20px'}}>
                 <div className={`${flex.about} ${style.gap}`}>
                     <p className={style.p} style={{marginBottom:'20px'}}>
                         Наши технадзоры постоячнно на объекте - <br/>это минимизирует ошибки и экономит деньги на их исправление.
