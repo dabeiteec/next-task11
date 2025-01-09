@@ -17,7 +17,9 @@ const ModalWindow:React.FC<ModalPropse> = ({active,setActive})=>{
     const handleCloseModal = ()=>{
         setActive(false)
     }
-
+    const handleSaleClick=()=>{
+        alert('Спасибо что выбрали нас!')
+    }
     return(
         <section className={`${styles.modalContainer} ${flex.flexColumn} ${styles.modalBackdrop} ${active ? styles.active : ""}`}>
             <h3 className={styles.title}>{textlTypeModal.notTimer}</h3>
@@ -25,7 +27,7 @@ const ModalWindow:React.FC<ModalPropse> = ({active,setActive})=>{
             <form className={`${styles.formContainer} ${flex.flexColumn}`}>
                 <StyledInput type='number'/>
                 <div className={`${styles.buttonContainer} ${flex.flexRow}`}>
-                    <MainButton label='Получить скидку 30%'/>
+                    <MainButton label='Получить скидку 30%' currentClick={handleSaleClick}/>
                     <MainButton label='Написать в WhatsApp' currentClick={handleWhatsAppRedirect}/>
                 </div>
             </form>
