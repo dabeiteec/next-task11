@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import styles from './licence.module.css'
 import { handleDownloadDoc } from "src/feature/download-prez";
