@@ -15,7 +15,6 @@ interface ModalPropse{
 const ModalWindow:React.FC<ModalPropse> = ({active,setActive})=>{
     const textlTypeModal={notTimer:'Напишите ваш номер телефона, чтобы зафиксировать скидку 30% и бесплатный технический аудит с пробным отчетом'}
     const handleCloseModal = ()=>{
-        console.log (active)
         setActive(false)
     }
 

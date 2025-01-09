@@ -1,7 +1,7 @@
 import React from "react";
 import MainPage from "src/Page/MainPage";
 
-export const  Home:React.FC  =()=> {
+const  Home  =()=> {
   return (
     <div>
       <MainPage/>
