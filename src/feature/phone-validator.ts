@@ -1,7 +1,16 @@
+const phoneValidator = (currentPhone:string) => {
+    const phoneRegex = /^\+?[1-9]\d{1,14}$/;
+    const errors = [];
 
-// TODO const phoneValidator=(currentPhone)=>{
-//     const phoneRegex={
-//         lenth:11,
-//         number:/^[78]\d{10}$/,
-//     }
-// }
+    if (currentPhone.length !== 11) {
+        errors.push('Неверная длина номера телефона');
+    }
+
+    if (!phoneRegex.test(currentPhone)) {
+        errors.push('Неверный формат номера телефона');
+    }
+
+    return errors;
+};
+
+export default phoneValidator;

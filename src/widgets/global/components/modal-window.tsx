@@ -25,7 +25,7 @@ const ModalWindow:React.FC<ModalPropse> = ({active,setActive})=>{
             <h3 className={styles.title}>{textlTypeModal.notTimer}</h3>
             <IoClose className={styles.closeIcon} onClick={handleCloseModal}/>
             <form className={`${styles.formContainer} ${flex.flexColumn}`}>
-                <StyledInput type='number'/>
+                <StyledInput type='tel' placeholder='Введите номер телефона'/>
                 <div className={`${styles.buttonContainer} ${flex.flexRow}`}>
                     <MainButton label='Получить скидку 30%' currentClick={handleSaleClick}/>
                     <MainButton label='Написать в WhatsApp' currentClick={handleWhatsAppRedirect}/>

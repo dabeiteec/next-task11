@@ -21,4 +21,13 @@ export const TransparentButton:React.FC<ButtonProp>= ({label,currentClick})=>{
         </button>
     )
 }
+
+export const LinkButton:React.FC<ButtonProp>= ({label,currentClick})=>{
+    return(
+        <button onClick={currentClick} className={styles.licencetButton }>
+            {label}
+        </button>
+    )
+}
+
 export default MainButton;

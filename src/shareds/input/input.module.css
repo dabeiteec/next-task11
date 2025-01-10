@@ -1,19 +1,14 @@
-/* :root{
-    --backgroundInputColor: #F9f9f9;
-    --foregroundInputColor: #0D152D;
-}
-@media (prefers-color-scheme: dark) {
-    :root {
-        --backgroundInputColor: #0D152D;;
-        --foregroundInputColor: #F9F9F9;
-    }
-} */
-
 .styledInput{
     background-color: var(--backgroundInputColor);
-    border: 1px var(--foregroundInputColor) solid;
+    border: 1px var(--foreground) solid;
     border-radius: 20px;
     padding: 5px 10px 5px 10px;
     font-size: 20px;
     min-width: 200px;
+    width: 40%;
+}
+@media (width:'1920px') {
+    .styledInput{
+        width: 70%;
+    }
 }

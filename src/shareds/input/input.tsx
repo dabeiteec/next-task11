@@ -1,11 +1,11 @@
 'use client'
-import React,{ChangeEvent, useState } from 'react';
+import React,{ChangeEvent, useState, useEffect } from 'react';
 import styles from './input.module.css'
+import phoneValidator from 'src/feature/phone-validator';
 
 interface StyledInput{
     placeholder?:string;
     type:string;
-    // onChange?:(event: ChangeEvent<HTMLInputElement>) => void;
 }
 
 const StyledInput:React.FC<StyledInput>= ({placeholder,type})=>{
@@ -14,6 +14,7 @@ const StyledInput:React.FC<StyledInput>= ({placeholder,type})=>{
     const handleInputValue = (e: ChangeEvent<HTMLInputElement>) => {
         const newValue = e.target.value;
         setInputValue(newValue);
+        phoneValidator(newValue)
     } 
 
     return (<input className={styles.styledInput} 

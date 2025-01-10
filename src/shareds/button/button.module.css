@@ -1,22 +1,10 @@
-
-/* :root {
-    --font-family: 'Mulish', sans-serif;
-    --backgroundButton: #F9F9F9;
-    --foregroundButton: #0D152D;;
-} 
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --backgroundButton: #0D152D;;
-        --foregroundButton: #F9F9F9;
-    }
-} */
 .button {
     border-radius: 8px;
     padding: 5px 10px;
     font-size: 32px;
     font-weight: 300;
     font-family: var(--font-family);
+    cursor: pointer;
 }
 .mainButton {
     color: var(--foregroundButton);
@@ -30,7 +18,17 @@
     font-size: 20px;
     font-family: var(--font-family);
     font-weight: 200;
+    cursor: pointer;
 } 
+.licencetButton {
+    border: transparent;
+    background-color: transparent;
+    font-size: 1em;
+    font-family: var(--font-family);
+    cursor: pointer;
+    color: #007BFF;
+    text-decoration: none;
+}
 @media (max-width:720px) {
     .button {
         font-size: 26px;

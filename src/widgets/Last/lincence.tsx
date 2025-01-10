@@ -2,8 +2,15 @@
 import React from 'react';
 import styles from './licence.module.css'
 import { handleDownloadDoc } from "src/feature/download-prez";
+import { LinkButton } from 'src/shareds/button/button';
 
 const Licence:React.FC = ()=>{
+    const arrLicenceText=['Свидетельство об аккредитации на право осуществления инжиниринговых услуг по техническому надзору',
+        'Свидетельство об аккредитации на право осуществления экспертных работ',
+        'Свидетельство об аккредитации на право управления проектами',
+        'Лицензия на инженерно-геодезические работы',
+        'Сертификат соответствия государственной системы технического регулирования'
+    ]
     return(
         <div className={styles.container} style={{gap:'20px'}}>
             <h1>TOO `Engineering Services`</h1>
@@ -12,17 +19,19 @@ const Licence:React.FC = ()=>{
                 <h3>Лицензии</h3>
                 <ul>
                     <li>
-                        <a  onClick={handleDownloadDoc}>Свидетельство об аккредитации на право осуществления инжиниринговых услуг по техническому надзору</a>
+                        <LinkButton label={arrLicenceText[0]}  currentClick={handleDownloadDoc}/>
                     </li>
                     <li>
-                        <a  onClick={handleDownloadDoc}>Свидетельство об аккредитации на право осуществления экспертных работ</a>                    </li>
-                    <li>
-                        <a  onClick={handleDownloadDoc}>Свидетельство об аккредитации на право управления проектами</a>
+                        <LinkButton label={arrLicenceText[1]} currentClick={handleDownloadDoc}/>                  
                     </li>
                     <li>
-                        <a  onClick={handleDownloadDoc}>Лицензия на инженерно-геодезические работы</a>                    </li>
+                        <LinkButton label={arrLicenceText[2]} currentClick={handleDownloadDoc}/>
+                    </li>
                     <li>
-                        <a onClick={handleDownloadDoc}>Сертификат соответствия государственной системы технического регулирования</a>
+                        <LinkButton label={arrLicenceText[3]}  currentClick={handleDownloadDoc}/>
+                    </li>
+                    <li>
+                        <LinkButton label={arrLicenceText[4]} currentClick={handleDownloadDoc}/>
                     </li>
                 </ul>
             </div>

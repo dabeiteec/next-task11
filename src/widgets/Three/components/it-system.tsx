@@ -1,14 +1,25 @@
-import React from "react";
+'use client'
+import React,{ SetStateAction } from "react";
 import MainButton from "src/shareds/button/button";
 import styles from '../styles/it.module.css';
 import flex from '../../../shareds/styles/flex.module.css'
 
-const ITSystem: React.FC = () => {
+interface ModalPropse{
+    setActive: React.Dispatch<SetStateAction<boolean>>;
+}
+
+const ITSystem:  React.FC<ModalPropse> = ({setActive}) => {
+
     const arr = [
         'Вы удаленно контролируете подрядчиков.Все замечания видны в онлайнрежиме.',
         'Повышает ответственность и дисциплину подрядчиков	',
         'Позволяет выявлять систематические ошибки и исправлять их',
     ];
+
+    const handleOpenModal = ()=>{
+        setActive(true)
+    }
+
     return (
         <article className={`${styles.container}  ${flex.flexColumn}`}>
             <div className={flex.flexColumn}>
@@ -24,7 +35,7 @@ const ITSystem: React.FC = () => {
                     </p>))
                 }
             </ul>
-            <MainButton label="Отправить проект"/>
+            <MainButton label="Отправить проект" currentClick={handleOpenModal}/>
         </article>
     );
 };

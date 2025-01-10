@@ -15,7 +15,6 @@
     align-items: center;  
     height: 60px;  
     gap: 20px;
-    cursor: pointer; 
 }
 .contactServices{
     justify-content: space-around;
@@ -40,6 +39,7 @@
     font-size: 40px;
     color: #25d366;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .whatsappIcon:hover {
@@ -52,6 +52,8 @@
     border-radius: 50%;
     padding: 5px;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+
 }
 .phoneIcon:hover {
     transform: scale(1.2);
